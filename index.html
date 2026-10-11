@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRITICAL WARNING! ⚠️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Animated Floating Background Particles -->
+  <div class="bg-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div id="step-1" class="screen active">
+    <div class="lock-card danger-border">
+      <h2 class="danger-text">⚠️ CRITICAL SYSTEM LOCK</h2>
+      <p id="lock-msg" class="danger-subtext">Restricted Area! Locked until time runs out! ⏰</p>
+      
+      <div id="timer-box" class="danger-timer">
+        <span id="days">00</span>d : <span id="hours">00</span>h : <span id="minutes">00</span>m : <span id="seconds">00</span>s
+      </div>
+
+      <button id="unlock-btn" class="pulse-btn danger-btn" style="display: none;">ACCESS SYSTEM 🚨</button>
+    </div>
+  </div>
+
+  <div id="step-2" class="screen">
+    <div class="lock-card danger-border">
+      <h1 class="danger-title">⛔ DANGER ZONE!</h1>
+      <p class="warning-desc">Farah, pressing this button threatens your device security! Do NOT press for your own safety!</p>
+      <button id="danger-trigger-btn" class="big-red-btn">DO NOT PRESS 💣</button>
+      
+      <div id="confirm-box" class="confirm-modal" style="display: none;">
+        <p class="confirm-text">⚠️ SECURITY ALERT: Are you 100% sure, Faroha?</p>
+        <div class="btn-group">
+          <button id="yes-btn" class="confirm-btn yes">Yes, Proceed!</button>
+          <button id="no-btn" class="confirm-btn no">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="step-3" class="screen flashing-red">
+    <h1 class="alarm-title">🚨 SYSTEM BREACH DETECTED! 🚨</h1>
+    <p class="alarm-sub">CRITICAL FAILURE! OVERHEAT IMMINENT!</p>
+    
+    <div id="hamboza-head" class="hamboza-head-peek">
+      <div class="chubby-face">🤡</div>
+      <div class="speech-bubble">Wait... What's happening?! 😲</div>
+    </div>
+
+    <div id="hamboza-center" class="chubby-center-box" style="display: none;">
+      <div class="chubby-body">
+        <div class="hero-chest-tag">H</div>
+      </div>
+      <p class="hero-dialogue">Don't panic Faroha! Hamboza is here to save you! 🦸‍♂️</p>
+    </div>
+
+    <div id="hero-rescue-container" class="hero-container" style="display: none;">
+      <div class="hamboza-mini-standing">
+        <div class="hero-tag">HAMBOZA</div>
+        <div class="mini-chubby">🦸‍♂️</div>
+      </div>
+      <button id="rescue-btn" class="rescue-btn">FOLLOW HAMBOZA BSOR3AAAAA!! 🛡️</button>
+    </div>
+  </div>
+
+  <div id="step-4" class="screen">
+    <div class="hero-badge">🎂 Chapter 19 Unlocked!</div>
+    <h1 class="main-title full-width-title">✨ Happy Birthday QUEEN! ❤️ ✨</h1>
+    <p class="subtitle full-width-sub">Special Date: <span class="highlight-date">13/10</span></p>
+
+    <div id="envelope" class="envelope-box shaking">
+      <div class="envelope-icon">✉️</div>
+      <p class="env-text">A Message from Hamoza 💌</p>
+      <span class="click-hint">(Tap to open!)</span>
+    </div>
+
+    <div id="final-letter" class="letter-card" style="display: none;">
+      <h2 class="letter-heading">💌 A Message to Faroha 💌</h2>
+      <p>This little gift is obviously for you  You’re gonna see it now because today is YOUR day But just so you know I’ve  been preparing this gift since September 1st
+
+Happy birthday to my favorite person  I genuinely hope I always get to see you happy, successful, and achieving everything you want. This is your first birthday and i am with u and I really wanted to make this day special for u like actually special enough for you to love it and remember it
+
+You genuinely have no idea how much I love you and everything about you your smile ,your eyes, the way you speak, your kindest and purest heart love talking to you all the time telling you literally everything about my life and I trust you more than you probably realize. I just hope you see me the same way I see you cuz i will always be your safe place
+
+We haven’t been in each other’s lives for that long but somehow you became the closest person to me. And I really hope we always stay together because you’re genuinely the one person I never wanna lose and i will do anything to keep you in my life and make you happy and safe</p>
+
+      <!-- 📸 Photos Grid Inside Message (Soora 4 gdeda IMG-5074) -->
+      <div class="in-message-gallery">
+        <div class="photo-frame"><img src="https://i.ibb.co/Vpmq5vWr/image.jpg" alt="Memory 1"></div>
+        <div class="photo-frame"><img src="https://i.ibb.co/VcVpRd11/image.jpg" alt="Memory 2"></div>
+        <div class="photo-frame"><img src="https://i.ibb.co/KP3v0Xw/image.jpg" alt="Memory 3"></div>
+        <div class="photo-frame"><img src="https://i.ibb.co/1Js3rgGm/IMG-5074.jpg" alt="Memory 4 Gdeda"></div>
+        <div class="photo-frame"><img src="https://i.ibb.co/HD3FND27/IMG-5058.jpg" alt="New Memory 1"></div>
+        <div class="photo-frame"><img src="https://i.ibb.co/XZ8x7Cx3/IMG-5049.jpg" alt="New Memory 2"></div>
+      </div>
+
+      <p>I love our late night calls so much staying up way too late listening to you when you’re going through something or when something’s bothering you I love that we can literally talk about the most random bullshit laugh for hours and I even love listening to your stupid jokes I really hope we always stay like this Enjoy your day to the MAX my favorite little farohty and i hope this simple gift makes your day a little better and makes you feel loved and appreciated cuz i genuinely wrote every every every single word from the bottom of my heart love uuu love uuuuu so much
+
+And btw I’m still older than u little girl</p>
+
+      <!-- ✨ For More Memories Section (Feha Soora IMG-5048) -->
+      <div class="memories-section">
+        <div class="memories-title">✨ For more memories with my fav ✨</div>
+        <div class="in-message-gallery">
+          <div class="photo-frame"><img src="https://i.ibb.co/s9XvLSnC/IMG-5048.jpg" alt="New Memory 5"></div>
+          <div class="photo-frame"><img src="https://i.ibb.co/9k5LSpFZ/2135d3e9-9eec-4311-87d4-4c958a19a0f3.jpg" alt="Old Memory"></div>
+          <div class="photo-frame"><img src="https://i.ibb.co/qLbpHs2n/IMG-4806.jpg" alt="New Memory 3"></div>
+          <div class="photo-frame"><img src="https://i.ibb.co/qFmCctKr/IMG-4740.jpg" alt="New Memory 4"></div>
+        </div>
+      </div>
+
+      <!-- Secret Interactive Easter Eggs -->
+      <div class="easter-eggs-container">
+        <span class="secret-egg" onclick="showSecretNote('👑 Still older than u anyway 😜')">👑</span>
+        <span class="secret-egg" onclick="showSecretNote('👫 My fav annoying farohaa ever')">👫</span>
+        <span class="secret-egg" onclick="showSecretNote('✨ Coolest and kindest faroha in the world')">✨</span>
+        <span class="secret-egg" id="egg-rose">🌹</span>
+      </div>
+
+      <div class="signature"> Hamoza </div>
+
+      <button id="more-confetti-btn" class="confetti-extra-btn">Click for More Magic 🥳🎉</button>
+    </div>
+  </div>
+
+  <!-- Special Pink Modal for Rose Button -->
+  <div id="rose-modal" class="custom-modal-overlay" style="display: none;">
+    <div class="custom-modal-box">
+      <span class="close-modal-btn" id="close-modal">&times;</span>
+      <div class="modal-big-rose">🌹</div>
+      <p class="modal-rose-text">for faroha ❤️</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
